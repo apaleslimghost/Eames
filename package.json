@@ -1,0 +1,35 @@
+{
+  "name": "eames",
+  "version": "0.1.0",
+  "description": "file server for saito tasks",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "make",
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/quarterto/Eames.git"
+  },
+  "keywords": [
+    "saito",
+    "inception",
+    "tasks",
+    "build",
+    "server",
+    "dependency"
+  ],
+  "author": "Matt Brennan <mwrbrennan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quarterto/Eames/issues"
+  },
+  "homepage": "https://github.com/quarterto/Eames",
+  "devDependencies": {
+    "LiveScript": "^1.2.0",
+    "mocha": "^1.18.2",
+    "karma-sinon-expect": "^0.1.4",
+    "concat-stream": "^1.4.5",
+    "from": "^0.1.3"
+  }
+}
