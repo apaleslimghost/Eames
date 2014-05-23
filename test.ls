@@ -8,8 +8,8 @@ require! {
 export
 	'Miles':
 		'should run tasks by the array of files and serve them': (done)->
-			spec = task: expect.sinon.stub!
-			spec.task.with-args 'file.txt' .returns σ <[ output ]>
+			spec = expect.sinon.stub!
+			spec.with-args 'file.txt' .returns σ <[ output ]>
 
 			req = url: '/file.txt'
 			res = concat-stream (data)->
@@ -19,8 +19,8 @@ export
 			(eames (-> it), spec) req, res
 
 		'should 404 when there isn\'t a task to run': (done)->
-			spec = task: expect.sinon.stub!
-			spec.task.with-args 'file.txt' .throws new ReferenceError "No such task file.txt"
+			spec = expect.sinon.stub!
+			spec.with-args 'file.txt' .throws new ReferenceError "No such task file.txt"
 
 			req = url: '/file.txt'
 			res = concat-stream (data)->
